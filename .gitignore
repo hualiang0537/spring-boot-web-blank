@@ -1,0 +1,16 @@
+target/
+bin/
+build/
+
+*.jar
+*.war
+*.ear
+*.class
+*.asc
+
+*.tmp
+~*
+*.bak
+*.backup
+
+.DS_Store

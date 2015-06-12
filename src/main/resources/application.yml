@@ -1,0 +1,26 @@
+info:
+  app-name: spring-boot-web-blank
+  version: 1.0.0
+  authors:
+    - 应卓
+
+banner:
+  location: classpath:/META-INF/banner.txt
+
+spring:
+  profiles:
+    include:
+    active:
+  view:
+    prefix: /WEB-INF/jsp/
+    suffix: .jsp
+
+logging:
+  level:
+    org.springframework: WARN
+    org.hibernate.validator: WARN
+    com.github.yingzhuo: WARN
+
+server:
+  port: 8080
+  session-timeout: 3600
