@@ -1,16 +1,17 @@
+# ----------------------------------------------------------------------------------
 endpoints:
   shutdown:
     enabled: false
-
+# ----------------------------------------------------------------------------------
 info:
   app-name: spring-boot-web-blank
   version: 1.0.0
   authors:
     - 应卓
-
+# ----------------------------------------------------------------------------------
 banner:
   location: classpath:/META-INF/banner.txt
-
+# ----------------------------------------------------------------------------------
 spring:
   profiles:
     include:
@@ -36,10 +37,15 @@ spring:
       validation-query: SELECT 'X'
       min-evictable-idle-time-millis: 300000
       time-between-eviction-runs-millis: 3000
-
+  mybatis:
+    config-location: classpath:/META-INF/mybatis.xml
+    fail-fast: true
+# ----------------------------------------------------------------------------------
 logging:
   level:
     org.springframework: WARN
     org.hibernate.validator: WARN
     com.github.yingzhuo: WARN
-
+# ----------------------------------------------------------------------------------
+foo:
+  config-location: classpath:/mybatis.xml
