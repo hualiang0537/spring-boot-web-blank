@@ -23,7 +23,6 @@ public class SpringConfigMvc extends WebMvcConfigurerAdapter {
         registry.addRedirectViewController("/", "/info.json");
     }
 
-
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/image/**").addResourceLocations("/WEB-INF/image");
