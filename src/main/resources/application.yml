@@ -22,7 +22,7 @@ spring:
   datasource:
     druid:
       driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/hola
+      url: jdbc:mysql://localhost:3306/test
       username: root
       password: root
       initial-size: 2
@@ -46,6 +46,3 @@ logging:
     org.springframework: WARN
     org.hibernate.validator: WARN
     com.github.yingzhuo: WARN
-# ----------------------------------------------------------------------------------
-foo:
-  config-location: classpath:/mybatis.xml

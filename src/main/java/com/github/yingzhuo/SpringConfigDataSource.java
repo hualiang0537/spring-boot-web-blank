@@ -10,7 +10,6 @@ import javax.sql.DataSource;
 @Configuration
 public class SpringConfigDataSource {
 
-
     @Bean(name = "dataSource", initMethod = "init", destroyMethod = "close")
     @ConfigurationProperties(prefix = "spring.datasource.druid")
     public DataSource dataSource() {
