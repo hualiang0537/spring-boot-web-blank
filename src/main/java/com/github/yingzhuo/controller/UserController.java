@@ -4,14 +4,13 @@ import com.github.yingzhuo.domain.User;
 import com.github.yingzhuo.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 
-@Controller
+@RestController
 @RequestMapping("/user")
 public class UserController {
 
@@ -21,7 +20,6 @@ public class UserController {
     private UserService userService;
 
     @RequestMapping("/{userId}")
-    @ResponseBody
     public User get(@PathVariable("userId") String userId) {
         User user = userService.findUserById(userId);
         return user;
