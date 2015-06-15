@@ -2,4 +2,17 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 
+    <settings>
+        <setting name="logImpl" value="NO_LOGGING"/>
+    </settings>
+
+    <typeAliases>
+        <typeAlias type="java.util.Date" alias="date"/>
+        <package name="com.github.yingzhuo.domain"/>
+    </typeAliases>
+
+    <mappers>
+        <mapper resource="META-INF/mybatis-mapper/test.xml"/>
+    </mappers>
+
 </configuration>

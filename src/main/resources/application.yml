@@ -37,6 +37,11 @@ spring:
       validation-query: SELECT 'X'
       min-evictable-idle-time-millis: 300000
       time-between-eviction-runs-millis: 3000
+      stat-filter:
+        log-slow-sql: true
+        slow-sql-millis: 5000
+      slf4j-log-filter:
+        result-set-log-enabled: false
   mybatis:
     config-location: classpath:/META-INF/mybatis.xml
     fail-fast: true
@@ -45,4 +50,6 @@ logging:
   level:
     org.springframework: WARN
     org.hibernate.validator: WARN
-    com.github.yingzhuo: WARN
+    org.apache.ibatis: WARN
+    org.mybatis: WARN
+    com.github.yingzhuo: DEBUG

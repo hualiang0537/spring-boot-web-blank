@@ -7,6 +7,7 @@
     <groupId>com.github.yingzhuo</groupId>
     <artifactId>spring-boot-web-blank</artifactId>
     <version>1.0.0</version>
+    <packaging>jar</packaging>
 
     <dependencyManagement>
         <dependencies>
@@ -242,6 +243,13 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>1.2.4.RELEASE</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
