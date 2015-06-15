@@ -14,14 +14,24 @@ public class ServiceLoggingAop {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ServiceLoggingAop.class);
 
+    private boolean enabled = true;
+
     @Around("execution(public * com.github.yingzhuo.service.impl.*.*(..))")
     public Object around(ProceedingJoinPoint joinPoint) throws Throwable {
-        final Method method = ((MethodSignature) joinPoint.getSignature()).getMethod();
-        long start = System.currentTimeMillis();
-        final Object obj = joinPoint.proceed();
-        long end = System.currentTimeMillis();
-        LOGGER.info("{} - ({} millis)", method, end - start);
-        return obj;
+        if (enabled == false) {
+            return joinPoint.proceed();
+        } else {
+            final Method method = ((MethodSignature) joinPoint.getSignature()).getMethod();
+            long start = System.currentTimeMillis();
+            final Object obj = joinPoint.proceed();
+            long end = System.currentTimeMillis();
+            LOGGER.info("{} - ({} millis)", method, end - start);
+            return obj;
+        }
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
     }
 
 }

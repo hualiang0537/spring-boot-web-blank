@@ -45,6 +45,9 @@ spring:
   mybatis:
     config-location: classpath:/META-INF/mybatis.xml
     fail-fast: true
+  aop:
+    service-logging:
+      enabled: false
 # ----------------------------------------------------------------------------------
 logging:
   level:
