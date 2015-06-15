@@ -47,6 +47,9 @@ spring:
     fail-fast: true
   aop:
     service-logging:
+      enabled: true
+  task:
+    heartbeat:
       enabled: false
 # ----------------------------------------------------------------------------------
 logging:

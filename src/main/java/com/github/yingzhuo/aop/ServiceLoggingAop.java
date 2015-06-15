@@ -18,7 +18,7 @@ public class ServiceLoggingAop {
 
     @Around("execution(public * com.github.yingzhuo.service.impl.*.*(..))")
     public Object around(ProceedingJoinPoint joinPoint) throws Throwable {
-        if (enabled == false) {
+        if (!enabled) {
             return joinPoint.proceed();
         } else {
             final Method method = ((MethodSignature) joinPoint.getSignature()).getMethod();
