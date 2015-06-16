@@ -24,5 +24,4 @@ public class UserController {
         User user = userService.findUserById(userId);
         return user;
     }
-
 }

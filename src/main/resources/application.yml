@@ -51,6 +51,8 @@ spring:
   task:
     heartbeat:
       enabled: false
+  jms:
+    broker-url: vm://localhost?broker.persistent=false
 # ----------------------------------------------------------------------------------
 logging:
   level:
@@ -58,4 +60,5 @@ logging:
     org.hibernate.validator: WARN
     org.apache.ibatis: WARN
     org.mybatis: WARN
+    org.apache.activemq: WARN
     com.github.yingzhuo: DEBUG
