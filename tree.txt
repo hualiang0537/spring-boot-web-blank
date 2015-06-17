@@ -44,6 +44,8 @@
 │   │       │   └── mybatis.xml
 │   │       ├── application.yml
 │   │       ├── logback.xml
+│   │       ├── public
+│   │       │   └── LICENSE.txt
 │   │       └── templates
 │   │           ├── error.ftl
 │   │           └── say-hello.ftl
@@ -52,4 +54,4 @@
 │       └── resources
 └── tree.txt
 
-22 directories, 30 files
+23 directories, 31 files
