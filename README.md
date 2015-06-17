@@ -27,5 +27,8 @@ mvn spring-boot:run
 
 ~~~
 cd /path/to/spring-boot-web-blank
+mvn clean package
 java -jar target/spring-boot-web-blank-1.0.0.jar --spring.profiles.active=prod
 ~~~
+
+访问`http://localhost:8080/`即可看到效果
