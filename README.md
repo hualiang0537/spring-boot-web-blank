@@ -10,3 +10,7 @@
 - logback-1.1.3
 - guava-18.0
 - apache-commons-xxx
+
+#### 注意事项
+
+- 不推荐使用[JSP](http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-jsp-limitations), freemarker取而代之。

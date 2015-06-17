@@ -13,9 +13,15 @@ banner:
   location: classpath:/META-INF/banner.txt
 # ----------------------------------------------------------------------------------
 spring:
-  view:
-    prefix: /WEB-INF/jsp/
-    suffix: .jsp
+  freemarker:
+    allow-request-override: false
+    cache: false
+    check-template-location: true
+    charset: UTF-8
+    content-type: text/html
+    template-loader-path: classpath:/templates/
+    prefix:
+    suffix: .ftl
   datasource:
     druid:
       driver-class-name: com.mysql.jdbc.Driver
