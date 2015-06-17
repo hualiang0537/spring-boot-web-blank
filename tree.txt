@@ -1,0 +1,55 @@
+.
+├── CHANGELOG.md
+├── LICENSE
+├── README.md
+├── pom.xml
+├── spring-boot-web-blank.iml
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── github
+│   │   │           └── yingzhuo
+│   │   │               ├── Application.java
+│   │   │               ├── SpringConfigActivemq.java
+│   │   │               ├── SpringConfigAop.java
+│   │   │               ├── SpringConfigDataSource.java
+│   │   │               ├── SpringConfigMvc.java
+│   │   │               ├── SpringConfigMyBatis.java
+│   │   │               ├── SpringConfigScheduler.java
+│   │   │               ├── aop
+│   │   │               │   └── ServiceLoggingAop.java
+│   │   │               ├── controller
+│   │   │               │   └── UserController.java
+│   │   │               ├── dao
+│   │   │               │   ├── UserDao.java
+│   │   │               │   └── impl
+│   │   │               │       └── UserDaoImpl.java
+│   │   │               ├── domain
+│   │   │               │   └── User.java
+│   │   │               ├── mdb
+│   │   │               │   └── TestMdb.java
+│   │   │               ├── service
+│   │   │               │   ├── UserService.java
+│   │   │               │   └── impl
+│   │   │               │       └── UserServiceImpl.java
+│   │   │               └── task
+│   │   │                   └── HeartbeatTask.java
+│   │   └── resources
+│   │       ├── META-INF
+│   │       │   ├── banner.txt
+│   │       │   ├── logback.xsd
+│   │       │   ├── mybatis-mapper
+│   │       │   │   └── test.xml
+│   │       │   └── mybatis.xml
+│   │       ├── application.yml
+│   │       ├── logback.xml
+│   │       └── templates
+│   │           ├── error.ftl
+│   │           └── say-hello.ftl
+│   └── test
+│       ├── java
+│       └── resources
+└── tree.txt
+
+22 directories, 30 files
