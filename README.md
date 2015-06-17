@@ -13,5 +13,19 @@
 - apache-commons-xxx
 
 #### 注意事项
-- 目录结构可参考 `./tree.txt`
+- 目录结构可参考 `./tree.txt`。聪明的你一定知道什么样的文件应该放在什么目录。
 - 不推荐使用[JSP](http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-jsp-limitations), freemarker取而代之。
+
+#### 怎么运行这东西?
+
+~~~
+cd /path/to/spring-boot-web-blank
+mvn spring-boot:run
+~~~
+
+或
+
+~~~
+cd /path/to/spring-boot-web-blank
+java -jar target/spring-boot-web-blank-1.0.0.jar --spring.profiles.active=prod
+~~~
