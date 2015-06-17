@@ -63,6 +63,7 @@ logging:
     org.apache.ibatis: WARN
     org.mybatis: WARN
     org.apache.activemq: WARN
+    freemarker: WARN
     com.github.yingzhuo: DEBUG
 
 ---
